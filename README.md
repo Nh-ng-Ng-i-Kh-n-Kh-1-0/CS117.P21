@@ -1,2 +1,2 @@
-!(overview.png)
+![](overview.png)
 ![Poster chính thức](Official.png)
