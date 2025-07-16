@@ -1,2 +1,1 @@
-![Ảnh demo](assets/demo.png)
-
+![Poster chính thức](Official.png)
