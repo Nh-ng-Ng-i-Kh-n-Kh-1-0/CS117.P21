@@ -9,56 +9,13 @@
 </p>
 
 
-📘 Giới thiệu
-Đây là repo chứa đồ án môn học CS117 – Nhập môn Khoa học Dữ liệu, với đề tài:
-"Xây dựng hệ thống nhận diện trạng thái tỉnh táo của tài xế theo thời gian thực sử dụng video khuôn mặt và tín hiệu nhịp tim".
+This repository contains the final project for the course CS117 – Introduction to Data Science, conducted at [Your University Name]. Our project is titled:
+"A Real-Time Driver Alertness Detection System Using Facial Video and Heart Rate Signals."
 
-Hệ thống được thiết kế nhằm phát hiện trạng thái buồn ngủ hoặc mất tập trung của tài xế trong thời gian thực, từ đó đưa ra cảnh báo kịp thời nhằm giảm thiểu nguy cơ tai nạn giao thông.
+The motivation behind this project stems from the increasing number of traffic accidents caused by drowsy or distracted driving. Traditional in-car alert systems often rely on limited inputs (such as eye-blink detection alone) or are not designed for real-time performance. Our system aims to address this gap by combining visual data from a frontal camera with physiological signals (heart rate) to make more accurate and timely predictions about a driver's alertness state.
 
-🛠️ Công nghệ sử dụng
-Python
+We use a hybrid approach that leverages deep learning for facial expression analysis and machine learning for physiological signal classification. Specifically, a Vision Transformer (ViT) is used to process facial frames, while features derived from heart rate signals are processed by traditional classifiers such as XGBoost or Random Forest. The final system is capable of running in real-time, providing immediate output on whether the driver is alert or drowsy.
 
-OpenCV – xử lý video khuôn mặt
-
-PyTorch – huấn luyện mô hình phân loại
-
-ViT (Vision Transformer) – trích xuất đặc trưng từ ảnh
-
-XGBoost / Random Forest – phân tích nhịp tim
-
-Streamlit – giao diện demo thời gian thực
-
-📁 Cấu trúc repo
-bash
-Sao chép
-Chỉnh sửa
-CS117.P21/
-├── data/               # Dữ liệu gốc: video + HR
-├── models/             # Mô hình đã huấn luyện
-├── scripts/            # Các file xử lý chính
-├── assets/             # Ảnh poster, sơ đồ hệ thống
-├── README.md           # Giới thiệu repo (file này)
-└── demo_app.py         # Ứng dụng chạy demo bằng Streamlit
-👨‍💻 Thành viên nhóm
-Trương Hoàng Thành An - MSSV: ...
-
-[Tên 2] - MSSV: ...
-
-[Tên 3] - MSSV: ...
-
-[Tên 4] - MSSV: ...
-
-📊 Kết quả đạt được
-Accuracy tổng thể: 98.5% trên tập test
-
-Tốc độ xử lý: ~0.6 giây/frame (đạt yêu cầu thời gian thực)
-
-Đánh giá thực tế: Hệ thống hoạt động ổn định trong điều kiện ánh sáng bình thường
-
-📌 Hướng phát triển
-Tối ưu hóa tốc độ để có thể chạy trên thiết bị nhúng (Jetson, Raspberry Pi)
-
-Mở rộng phát hiện thêm trạng thái stress, lo âu, buồn chán,...
-
+This solution could serve as a foundational component for future advanced driver-assistance systems (ADAS), contributing to safer roads and more intelligent in-vehicle systems.
 Hỗ trợ đa người dùng trong xe (multi-face detection)
 
