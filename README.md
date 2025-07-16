@@ -1,7 +1,7 @@
+![](overview.png)
 <p align="center">
-  <img src="assets/overview.png" width="600"/>
+  <img src="overview.png" width="600"/>
 </p>
 
-<img src="assets/overview.png" width="800">
-![](overview.png)
+<img src="overview.png" width="800">
 ![Poster chính thức](Official.png)
