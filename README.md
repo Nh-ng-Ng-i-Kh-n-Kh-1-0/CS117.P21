@@ -1,7 +1,9 @@
-![](overview.png)
+<!-- Ảnh tổng quan, căn giữa, phóng to -->
 <p align="center">
-  <img src="overview.png" width="600"/>
+  <img src="overview.png" width="800"/>
 </p>
 
-<img src="overview.png" width="800">
-![Poster chính thức](Official.png)
+<!-- Ảnh poster chính thức, căn giữa, phóng to -->
+<p align="center">
+  <img src="Official.png" width="800"/>
+</p>
